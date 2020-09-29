@@ -1,0 +1,26 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "do the laundry",
+      "status": "in progress"
+    },
+    {
+      "id": 2,
+      "title": "read about conspiracy theories",
+      "status": "done"
+    },
+    {
+      "id": 3,
+      "title": "fix chair in the kitchen",
+      "status": "thinking about it"
+    },
+    {
+      "id": 4,
+      "title": "go shopping",
+      "status": "must do"
+    }
+
+  ]
+
+}
