@@ -1,0 +1,16 @@
+<div class="container">
+  <label>
+    <input type="text" name="title" [(ngModel)]="title" placeholder="Write something...">
+    {{ onAdd(title) }}
+  </label>
+  <select (change)="onChange($event)" >
+    <option value="must-do">must do</option>
+    <option value="in-progress">in progress</option>
+    <option value="thinking">thinking about it</option>
+    <option value="done">done</option>
+  </select>
+  <input type="submit" value="Add task" class="btn" (click)="onSubmitTask()">
+</div>
+
+
+<!--TODO: put select options to separate file and iterate on them here-->
