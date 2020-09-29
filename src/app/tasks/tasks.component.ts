@@ -28,5 +28,11 @@ export class TasksComponent implements OnInit {
     this.taskService.deleteTask(task).subscribe();
   }
 
+  onAdd(taskToAdd: Task): void {
+    this.taskService.addTask(taskToAdd).subscribe(task => {
+      this.tasks.push(task);
+    });
+  }
+
 
 }

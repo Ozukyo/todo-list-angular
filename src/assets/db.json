@@ -14,6 +14,11 @@
       "id": 3,
       "title": "fix chair in the kitchen",
       "status": "thinking about it"
+    },
+    {
+      "title": "test task",
+      "status": "thinking about it",
+      "id": 4
     }
   ]
 }

@@ -1,4 +1,5 @@
 <div class="tasks-container">
+  <app-add-task (addTask)="onAdd($event)"></app-add-task>
   <div class="task" *ngFor="let task of tasks">
     {{ task.title }}
     <button (click) = "onDelete(task)">x</button>
