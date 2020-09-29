@@ -20,7 +20,10 @@ export class TaskService {
   }
 
   getTasks(): Observable<Task[]> {
-    return  this.http.get<Task[]>(this.dataUrl);
+    return this.http.get<Task[]>(this.dataUrl);
+  }
 
+  deleteTask(task: Task): Observable<Task> {
+    return this.http.delete<Task>(`${this.dataUrl}/${task.id}`, httpOptions);
   }
 }

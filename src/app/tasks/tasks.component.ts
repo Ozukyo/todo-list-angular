@@ -20,4 +20,13 @@ export class TasksComponent implements OnInit {
 
   }
 
+  onDelete(task: Task): void {
+    console.log('delete ' + task.title);
+    // Remove from UI
+    this.tasks = this.tasks.filter(t => t.id !== task.id);
+    // Remove from server
+    this.taskService.deleteTask(task).subscribe();
+  }
+
+
 }
