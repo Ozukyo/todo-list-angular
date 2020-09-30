@@ -6,6 +6,7 @@ import { TasksComponent } from './tasks/tasks.component';
 import { AddTaskComponent } from './tasks/add-task/add-task.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { EditTaskComponent } from './tasks/edit-task/edit-task.component';
+import { FilterTasksComponent } from './tasks/filter-tasks/filter-tasks.component';
 
 
 
@@ -14,7 +15,8 @@ import { EditTaskComponent } from './tasks/edit-task/edit-task.component';
     AppComponent,
     TasksComponent,
     AddTaskComponent,
-    EditTaskComponent
+    EditTaskComponent,
+    FilterTasksComponent
   ],
   imports: [
     BrowserModule,

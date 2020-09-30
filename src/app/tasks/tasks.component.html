@@ -1,6 +1,7 @@
 <div class="tasks-container">
 
   <app-add-task (addTask)="onAdd($event)"></app-add-task>
+  <app-filter-tasks ></app-filter-tasks>
 
   <div class="list-tasks" *ngIf="tasks">
     <div class="task" *ngFor="let task of tasks" (dblclick)="onEdit(task)">
