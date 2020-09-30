@@ -6,7 +6,12 @@ import {NgForm} from '@angular/forms';
 @Component({
   selector: 'app-tasks',
   templateUrl: './tasks.component.html',
-  styleUrls: ['./tasks.component.css']
+  styleUrls: ['./tasks.component.css'],
+  styles: [`
+    .check {
+      text-decoration: line-through;
+    }
+  `]
 })
 export class TasksComponent implements OnInit {
   tasks: Task[];
@@ -57,4 +62,14 @@ export class TasksComponent implements OnInit {
     this.selectedTask = null;
   }
 
+  onFilter(searchedWord: string): void {
+    this.tasks = this.tasks.filter(t => t.title.includes(searchedWord));
+    this.taskService.filterTasks(searchedWord).subscribe();
+
+  }
+
+  onToggle(task: Task): void {
+    task.status = 'done';
+    this.taskService.toggleDone(task).subscribe();
+  }
 }

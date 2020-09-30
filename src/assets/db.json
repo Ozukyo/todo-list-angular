@@ -2,13 +2,13 @@
   "tasks": [
     {
       "id": 1,
-      "title": "go for a walk updates",
-      "status": "done"
+      "title": "go for a walk",
+      "status": "thinking about it"
     },
     {
       "id": 2,
       "title": "read about conspiracy theories",
-      "status": "done"
+      "status": "in progress"
     },
     {
       "id": 3,
@@ -23,7 +23,7 @@
     {
       "title": "add filtering tasks",
       "id": 6,
-      "status": "must do"
+      "status": "done"
     }
   ]
 }
