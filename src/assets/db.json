@@ -2,13 +2,13 @@
   "tasks": [
     {
       "id": 1,
-      "title": "go for a walk updates",
-      "status": "done"
+      "title": "go for a walk",
+      "status": "in progress"
     },
     {
       "id": 2,
       "title": "read about conspiracy theories",
-      "status": "done"
+      "status": "in progress"
     },
     {
       "id": 3,

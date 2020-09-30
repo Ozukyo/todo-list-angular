@@ -39,4 +39,8 @@ export class TaskService {
     return this.http.get<Task[]>(`${this.dataUrl}?title_like=${searchWord}`);
   }
 
+  toggleDone(task: Task): Observable<Task> {
+    task.status = 'done';
+    return this.http.patch<Task>(`${this.dataUrl}/${task.id}`, task, httpOptions);
+  }
 }

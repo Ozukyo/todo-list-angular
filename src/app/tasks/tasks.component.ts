@@ -62,4 +62,9 @@ export class TasksComponent implements OnInit {
     this.taskService.filterTasks(searchedWord).subscribe();
 
   }
+
+  onToggle(task: Task): void {
+    task.status = 'done';
+    this.taskService.toggleDone(task).subscribe();
+  }
 }
