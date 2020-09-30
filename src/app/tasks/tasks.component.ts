@@ -57,4 +57,9 @@ export class TasksComponent implements OnInit {
     this.selectedTask = null;
   }
 
+  onFilter(searchedWord: string): void {
+    this.tasks = this.tasks.filter(t => t.title.includes(searchedWord));
+    this.taskService.filterTasks(searchedWord).subscribe();
+
+  }
 }

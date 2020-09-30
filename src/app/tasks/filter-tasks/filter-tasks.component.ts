@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-filter-tasks',
@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./filter-tasks.component.css']
 })
 export class FilterTasksComponent implements OnInit {
-  @Input
-  constructor() { }
+
+  @Output() filterTasks: EventEmitter<any> = new EventEmitter();
+  searchedWord: string;
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
+  onSearch(): void {
+    console.log(this.searchedWord);
+    this.filterTasks.emit(this.searchedWord);
+  }
 }

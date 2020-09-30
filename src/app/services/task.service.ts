@@ -34,4 +34,9 @@ export class TaskService {
   updateTask(task: Task): Observable<Task> {
     return this.http.patch<Task>(`${this.dataUrl}/${task.id}`, task, httpOptions);
   }
+
+  filterTasks(searchWord: string): Observable<Task[]> {
+    return this.http.get<Task[]>(`${this.dataUrl}?title_like=${searchWord}`);
+  }
+
 }
