@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "go for a walk",
-      "status": "in progress"
+      "status": "thinking about it"
     },
     {
       "id": 2,
@@ -23,7 +23,7 @@
     {
       "title": "add filtering tasks",
       "id": 6,
-      "status": "must do"
+      "status": "done"
     }
   ]
 }

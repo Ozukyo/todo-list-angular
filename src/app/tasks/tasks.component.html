@@ -4,7 +4,7 @@
   <app-filter-tasks (filterTasks)="onFilter($event)">  </app-filter-tasks>
 
   <div class="list-tasks" *ngIf="tasks">
-    <div class="task" *ngFor="let task of tasks" (dblclick)="onEdit(task)">
+    <div class="task" *ngFor="let task of tasks" (dblclick)="onEdit(task)" [ngClass]="{check:task.status==='done'}">
       <input type="checkbox" class="check" name="checkbox" (change)="onToggle(task)">
 
       <div *ngIf="!selectedTask">
