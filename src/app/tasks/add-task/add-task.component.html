@@ -1,4 +1,4 @@
-<div class="container">
+<form class="form" #taskForm="ngForm" (ngSubmit)="onSubmitTask()">
   <label>
     <input type="text" name="title" [(ngModel)]="title" placeholder="Write something...">
     {{ onAdd(title) }}
@@ -9,8 +9,8 @@
     <option value="thinking">thinking about it</option>
     <option value="done">done</option>
   </select>
-  <input type="submit" value="Add task" class="btn" (click)="onSubmitTask()">
-</div>
+  <input type="submit" value="Add task" class="btn">
+</form>
 
 
 <!--TODO: put select options to separate file and iterate on them here-->

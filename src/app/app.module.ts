@@ -4,7 +4,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { AddTaskComponent } from './tasks/add-task/add-task.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { EditTaskComponent } from './tasks/edit-task/edit-task.component';
 
 
 
@@ -12,12 +13,14 @@ import {FormsModule} from '@angular/forms';
   declarations: [
     AppComponent,
     TasksComponent,
-    AddTaskComponent
+    AddTaskComponent,
+    EditTaskComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

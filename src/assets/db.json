@@ -2,8 +2,8 @@
   "tasks": [
     {
       "id": 1,
-      "title": "do the laundry",
-      "status": "in progress"
+      "title": "go for a walk updates",
+      "status": "done"
     },
     {
       "id": 2,
@@ -16,9 +16,14 @@
       "status": "thinking about it"
     },
     {
-      "title": "test task",
+      "title": "learn Angular",
       "status": "thinking about it",
-      "id": 4
+      "id": 5
+    },
+    {
+      "title": "add filtering tasks",
+      "id": 6,
+      "status": "must do"
     }
   ]
 }

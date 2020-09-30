@@ -1,0 +1,12 @@
+<form class="form" #taskForm="ngForm" (ngSubmit)="sendTaskToList(taskForm)">
+  <label>
+    <input type="text" name="title" [(ngModel)]="selectedTask.title" placeholder="Write something...">
+  </label>
+  <select [(ngModel)]="selectedTask.status" name= "status">
+    <option value="must do">must do</option>
+    <option value="in progress">in progress</option>
+    <option value="thinking about it">thinking about it</option>
+    <option value="done">done</option>
+  </select>
+  <input type="submit" value="Update" class="btn">
+</form>

@@ -1,8 +1,8 @@
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import {Injectable} from '@angular/core';
+import {Observable} from 'rxjs';
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 
-import { Task } from '../models/Task';
+import {Task} from '../models/Task';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -29,5 +29,9 @@ export class TaskService {
 
   addTask(task: Task): Observable<Task> {
     return this.http.post<Task>(this.dataUrl, task, httpOptions);
+  }
+
+  updateTask(task: Task): Observable<Task> {
+    return this.http.patch<Task>(`${this.dataUrl}/${task.id}`, task, httpOptions);
   }
 }

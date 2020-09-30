@@ -1,4 +1,21 @@
 .task {
   display: flex;
+  justify-content: center;
+  border: 1px solid #0d3944;
+  padding-bottom: 10px;
+  margin-bottom: 1px;
+}
+
+.btn {
+  background-color: rgba(73, 104, 134, 0.1);
+  /*background-size: cover;*/
+  border-radius: 50%;
+  border: 1px solid #afafaf;
+  color: #afafaf;
+  cursor: pointer;
 
 }
+
+/*img {*/
+/*  background-size: cover;*/
+/*}*/

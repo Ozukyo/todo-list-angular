@@ -1,7 +1,31 @@
 <div class="tasks-container">
+
   <app-add-task (addTask)="onAdd($event)"></app-add-task>
-  <div class="task" *ngFor="let task of tasks">
-    {{ task.title }}
-    <button (click) = "onDelete(task)">x</button>
+
+  <div class="list-tasks" *ngIf="tasks">
+    <div class="task" *ngFor="let task of tasks" (dblclick)="onEdit(task)">
+
+      <div *ngIf="!selectedTask">
+        <span>{{ task.title }}</span>
+        <span>{{ '| status: ' + task.status }}</span>
+        <span><button class="btn" (click)="onDelete(task)">x</button></span>
+      </div>
+
+      <div *ngIf="selectedTask">
+
+        <div *ngIf="task.id !== selectedTask.id">
+          {{ task.title }} {{ '| status: ' + task.status }}
+          <button class="btn" (click)="onDelete(task)">x</button>
+        </div>
+        <div *ngIf="task.id === selectedTask.id">
+          <app-edit-task [selectedTask]="selectedTask"
+          (sendTaskToListEvent)="sendTaskToListEventHandler(task)">
+          </app-edit-task>
+        </div>
+
+      </div>
+    </div>
   </div>
+
 </div>
+
