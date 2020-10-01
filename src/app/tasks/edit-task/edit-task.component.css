@@ -5,6 +5,7 @@ input[type="text"] {
   margin-right: 10px;
   padding: 4px;
   border-radius: 8px;
+  outline: none;
 }
 
 input[type="submit"] {
@@ -29,4 +30,17 @@ select{
   margin-right: 10px;
   padding: 4px;
   border-radius: 8px;
+  outline: none;
 }
+
+.btn {
+  border: none;
+  background: transparent;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+

@@ -24,7 +24,7 @@
   border: 1px solid rgba(0,0,0,0.2);
   padding: 30px;
   min-width: 500px;
-  min-height: 500px;
+  min-height: 700px;
   align-content: center;
   position: relative;
   background-color: rgba(0,0,0,0.7);
@@ -47,6 +47,8 @@
   border-radius: 5px;
   margin-top: 10px;
   transition: transform 0.5s;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 14px;
 
 }
 
@@ -93,6 +95,7 @@ time.icon strong
   background-color: rgba(40, 57, 43, 0.3);
   border-bottom: 1px dashed black;
   box-shadow: 0 2px 0 black;
+  font-family: 'Philosopher', sans-serif;
 }
 
 time.icon em
@@ -100,6 +103,7 @@ time.icon em
   position: absolute;
   bottom: 0.3em;
   color: rgba(165, 165, 165, 0.3);
+  font-family: 'Philosopher', sans-serif;
 }
 
 time.icon span
@@ -112,7 +116,15 @@ time.icon span
 
 h3 {
   text-align: center;
-  color: white;
+  color: #807c7c;
+  opacity: 0.4;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.tasks-status {
+  color: #807c7c;
+  position: absolute;
+  right: 30px;
 }
 /*img {*/
 /*  background-size: cover;*/

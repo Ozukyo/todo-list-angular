@@ -5,7 +5,7 @@
       <strong>September</strong>
       <span>2</span>
     </time>
-    <h3>your todos:</h3>
+    <h3>todo list:</h3>
     <app-filter-tasks (filterTasks)="onFilter($event)">  </app-filter-tasks>
     <app-add-task (addTask)="onAdd($event)"></app-add-task>
 
@@ -13,16 +13,16 @@
       <input type="checkbox" class="check" name="checkbox" (change)="onToggle(task)">
 
       <div *ngIf="!selectedTask">
-        <span>{{ task.title | lowercase}}</span>
-        <span>{{ '    | status: ' + task.status | lowercase}}</span>
+        <span class="task-title">{{ task.title | lowercase}}</span>
+        <span class="tasks-status">{{ task.status | lowercase}}</span>
         <button class="delete-btn" (click)="onDelete(task)"><i class="far fa-trash-alt"></i></button>
       </div>
 
       <div *ngIf="selectedTask">
 
         <div *ngIf="task.id !== selectedTask.id">
-          <span>{{ task.title | lowercase}}</span>
-          <span>{{ '    | status: ' + task.status | lowercase}}</span>
+          <span class="task-title">{{ task.title | lowercase}}</span>
+          <span class="tasks-status">{{ task.status | lowercase}}</span>
           <button class="delete-btn" (click)="onDelete(task)"><i class="far fa-trash-alt"></i></button>
         </div>
         <div *ngIf="task.id === selectedTask.id">

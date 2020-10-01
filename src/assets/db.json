@@ -3,17 +3,17 @@
     {
       "id": 1,
       "title": "go for a walk",
-      "status": "in progress"
+      "status": "thinking about it"
     },
     {
       "id": 2,
       "title": "read about conspiracy theories",
-      "status": "thinking about it"
+      "status": "in progress"
     },
     {
       "id": 3,
       "title": "fix chair in the kitchen",
-      "status": "in progress"
+      "status": "must do"
     },
     {
       "title": "learn angular",
@@ -24,6 +24,11 @@
       "title": "buy coffee",
       "status": "in progress",
       "id": 6
+    },
+    {
+      "title": "go to sleep",
+      "status": "done",
+      "id": 7
     }
   ]
 }
