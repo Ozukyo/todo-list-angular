@@ -63,8 +63,10 @@ export class TasksComponent implements OnInit {
   }
 
   onFilter(searchedWord: string): void {
-    this.tasks = this.tasks.filter(t => t.title.includes(searchedWord));
-    this.taskService.filterTasks(searchedWord).subscribe();
+    this.taskService.filterTasks(searchedWord).subscribe(tasks => {
+        this.tasks = tasks;
+      }
+    );
 
   }
 
