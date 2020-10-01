@@ -3,12 +3,12 @@
     {
       "id": 1,
       "title": "go for a walk",
-      "status": "thinking about it"
+      "status": "in progress"
     },
     {
       "id": 2,
       "title": "read about conspiracy theories",
-      "status": "in progress"
+      "status": "thinking about it"
     },
     {
       "id": 3,
@@ -24,11 +24,6 @@
       "title": "buy coffee",
       "status": "in progress",
       "id": 6
-    },
-    {
-      "title": "go to sleep",
-      "status": "done",
-      "id": 7
     }
   ]
 }

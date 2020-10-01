@@ -9,14 +9,18 @@
 
 select {
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid #807c7c;
   border-radius: 10px;
   text-decoration: none;
   outline: none;
   padding: 6px;
   color: white;
-  /*position: relative;*/
-  /*left: 110px;*/
+  opacity: 0.6;
+
+}
+
+select:hover {
+  opacity: 1.8;
 }
 
 .btn {
@@ -26,7 +30,7 @@ select {
   cursor: pointer;
   color:white;
   width:50px;
-  size: 100%;
+
 }
 
 .btn:hover {
@@ -50,12 +54,14 @@ select option {
 
 .input {
   border-radius: 10px;
-  border: 1px solid white;
+  border: 1px solid #807c7c;
   padding:7px;
   padding-left: 10px;
   outline: none;
   background: rgba(0,0,0.0.0);
   margin-right: 3px;
+  opacity: 0.6;
+  color: white;
 }
 
 .input-wrapper {
@@ -66,4 +72,8 @@ select option {
 input[type="text"] {
   color:white;
   background:rgba(0,0,0,0.0);
+}
+.input:hover {
+  opacity: 1.8;
+
 }

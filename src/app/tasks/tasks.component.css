@@ -29,7 +29,8 @@
   position: relative;
   background-color: rgba(0,0,0,0.7);
   border-radius: 10px;
-  overflow-y:auto
+  overflow-y:auto;
+  display:block;
 }
 
 .task {
@@ -63,6 +64,14 @@ input[type="checkbox"] {
   opacity:50%;
 }
 
+task {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+time {
+ margin: auto;
+}
 
 time.icon
 {
