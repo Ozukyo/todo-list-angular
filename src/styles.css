@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 /*body {*/
 body {
-  background: linear-gradient(to right, #71B280, #134E5E);
-  min-width: 100vh;
+  background-image: url("assets/img/ima.jpg");
 }

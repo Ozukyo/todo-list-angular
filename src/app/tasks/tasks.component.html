@@ -1,23 +1,29 @@
-<div class="tasks-container">
+<div class="container">
+  <div class="tasks-container" *ngIf="tasks">
+    <time datetime="2014-09-20" class="icon">
+      <em>Friday</em>
+      <strong>September</strong>
+      <span>2</span>
+    </time>
+    <h3>your todos:</h3>
+    <app-filter-tasks (filterTasks)="onFilter($event)">  </app-filter-tasks>
+    <app-add-task (addTask)="onAdd($event)"></app-add-task>
 
-  <app-add-task (addTask)="onAdd($event)"></app-add-task>
-  <app-filter-tasks (filterTasks)="onFilter($event)">  </app-filter-tasks>
-
-  <div class="list-tasks" *ngIf="tasks">
     <div class="task" *ngFor="let task of tasks" (dblclick)="onEdit(task)" [ngClass]="{check:task.status==='done'}">
       <input type="checkbox" class="check" name="checkbox" (change)="onToggle(task)">
 
       <div *ngIf="!selectedTask">
-        <span>{{ task.title }}</span>
-        <span>{{ '| status: ' + task.status }}</span>
-        <span><button class="btn" (click)="onDelete(task)">x</button></span>
+        <span>{{ task.title | lowercase}}</span>
+        <span>{{ '    | status: ' + task.status | lowercase}}</span>
+        <button class="delete-btn" (click)="onDelete(task)"><i class="far fa-trash-alt"></i></button>
       </div>
 
       <div *ngIf="selectedTask">
 
         <div *ngIf="task.id !== selectedTask.id">
-          {{ task.title }} {{ '| status: ' + task.status }}
-          <button class="btn" (click)="onDelete(task)">x</button>
+          <span>{{ task.title | lowercase}}</span>
+          <span>{{ '    | status: ' + task.status | lowercase}}</span>
+          <button class="delete-btn" (click)="onDelete(task)"><i class="far fa-trash-alt"></i></button>
         </div>
         <div *ngIf="task.id === selectedTask.id">
           <app-edit-task [selectedTask]="selectedTask"

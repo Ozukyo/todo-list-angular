@@ -30,5 +30,6 @@ export class AddTaskComponent implements OnInit {
       status: this.status
     };
     this.addTask.emit(task);
+
   }
 }
