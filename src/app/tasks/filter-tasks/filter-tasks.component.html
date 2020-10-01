@@ -1,7 +1,6 @@
-<p>filter-tasks works!</p>
 <form (submit)="onSearch()">
   <label>
-    <input type="text" [(ngModel)]="searchedWord" name="searched">
+    <input type="text" class="filter-input" [(ngModel)]="searchedWord" name="searched" placeholder="Search..." autocomplete="off">
   </label>
 </form>
 

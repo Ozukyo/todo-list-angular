@@ -1,33 +1,79 @@
 .form {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-around;
+  /*flex-direction: column;*/
   align-items: center;
   margin-bottom: 30px;
-
 }
 
-label input{
-  background-color: transparent;
-  border: 1px solid #0d3944;
-  border-radius: 10px;
-  text-decoration: none;
-  outline: none;
-  padding: 10px;
-}
+
 select {
   background-color: transparent;
-  border: 1px solid #0d3944;
+  border: 1px solid #807c7c;
   border-radius: 10px;
   text-decoration: none;
   outline: none;
+  padding: 6px;
+  color: white;
+  opacity: 0.6;
+
+}
+
+select:hover {
+  opacity: 1.8;
+}
+
+.btn {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color:white;
+  width:50px;
+
+}
+
+.btn:hover {
+  transform: scale(1.4);
 }
 
 ::placeholder {
-  color: #134E5E;
+  color: white;
 }
 
 select option {
   background-color: rgba(73, 104, 134, 0.1);
-  color: #0d3944;
+  color: black;
+}
+
+.add-task-container {
+  position: absolute;
+  bottom: 0;
+
+}
+
+.input {
+  border-radius: 10px;
+  border: 1px solid #807c7c;
+  padding:7px;
+  padding-left: 10px;
+  outline: none;
+  background: rgba(0,0,0.0.0);
+  margin-right: 3px;
+  opacity: 0.6;
+  color: white;
+}
+
+.input-wrapper {
+  border: 5px;
+  border-radius: 14px;
+}
+
+input[type="text"] {
+  color:white;
+  background:rgba(0,0,0,0.0);
+}
+.input:hover {
+  opacity: 1.8;
+
 }
