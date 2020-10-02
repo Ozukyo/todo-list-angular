@@ -2,8 +2,8 @@
   "tasks": [
     {
       "id": 1,
-      "title": "go for a walk",
-      "status": "in progress"
+      "title": "go shopping",
+      "status": "must do"
     },
     {
       "id": 2,
