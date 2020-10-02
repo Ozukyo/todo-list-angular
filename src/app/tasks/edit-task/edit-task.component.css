@@ -37,6 +37,7 @@ select{
   border: none;
   background: transparent;
   color: white;
+  outline: none;
 }
 
 .btn:hover {
