@@ -1,6 +1,6 @@
 <form class="form" #taskForm="ngForm" (ngSubmit)="sendTaskToList(taskForm)">
   <label>
-    <input type="text" name="title" [(ngModel)]="selectedTask.title" placeholder="Write something...">
+    <input type="text" name="title" [(ngModel)]="selectedTask.title" autocomplete="off">
   </label>
   <select [(ngModel)]="selectedTask.status" name= "status">
     <option value="must do">must do</option>
