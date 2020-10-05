@@ -3,6 +3,7 @@ import {Observable} from 'rxjs';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 
 import {Task} from '../models/Task';
+import {environment} from '../../environments/environment';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -14,7 +15,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class TaskService {
-  dataUrl = 'http://localhost:3000/tasks';
+  dataUrl = `${environment.apiUrl}/tasks`;
 
   constructor(private http: HttpClient) {
   }

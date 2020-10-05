@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
 })
 export class EditTaskComponent implements OnInit {
 
-  @Input() selectedTask: Task = new Task();
+  @Input() selectedTask: Task;
   @Output() sendTaskToListEvent: EventEmitter<NgForm> = new EventEmitter();
 
   constructor() {

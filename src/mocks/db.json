@@ -2,28 +2,43 @@
   "tasks": [
     {
       "id": 1,
-      "title": "go shopping",
-      "status": "must do"
-    },
-    {
-      "id": 2,
-      "title": "read about conspiracy theories",
-      "status": "thinking about it"
+      "title": "go shoppinga",
+      "status": "done"
     },
     {
       "id": 3,
       "title": "fix chair in the kitchen",
-      "status": "must do"
+      "status": "done"
     },
     {
       "title": "learn angular",
-      "status": "in progress",
+      "status": "done",
       "id": 5
     },
     {
       "title": "buy coffee",
       "status": "thinking about it",
       "id": 6
+    },
+    {
+      "title": "asdwqe",
+      "status": "done",
+      "id": 7
+    },
+    {
+      "title": "asdwqe",
+      "status": "in progress",
+      "id": 8
+    },
+    {
+      "title": "asdwqe",
+      "status": "in progress",
+      "id": 9
+    },
+    {
+      "title": "asdwqe",
+      "status": "in progress",
+      "id": 10
     }
   ]
 }
