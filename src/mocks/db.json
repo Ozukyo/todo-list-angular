@@ -3,12 +3,7 @@
     {
       "id": 1,
       "title": "go shopping",
-      "status": "must do"
-    },
-    {
-      "id": 2,
-      "title": "read about conspiracy theories",
-      "status": "thinking about it"
+      "status": "in progress"
     },
     {
       "id": 3,
@@ -17,12 +12,12 @@
     },
     {
       "title": "learn angular",
-      "status": "in progress",
+      "status": "thinking about it",
       "id": 5
     },
     {
-      "title": "buy coffee",
-      "status": "thinking about it",
+      "title": "read about conspiracy theories",
+      "status": "done",
       "id": 6
     }
   ]

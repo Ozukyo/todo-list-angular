@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {Task} from '../models/Task';
 import {TaskService} from '../services/task.service';
 import {NgForm} from '@angular/forms';
@@ -16,6 +16,7 @@ import {NgForm} from '@angular/forms';
 export class TasksComponent implements OnInit {
   tasks: Task[];
   selectedTask: Task = new Task();
+  today: number = Date.now();
 
   constructor(private taskService: TaskService) {
   }
