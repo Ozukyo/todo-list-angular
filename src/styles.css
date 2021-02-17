@@ -4,5 +4,5 @@
   font-family: 'Philosopher', sans-serif;
 }
 body {
-  background-image: url("assets/img/ima.jpg");
+  background: url("assets/img/ima.jpg") center center/cover;
 }
